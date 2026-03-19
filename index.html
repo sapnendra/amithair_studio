@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmitHair Studio - Modern Hair, Your Way</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- FLOAT WA -->
+    <a
+      href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20AmitHair%20Studio%20%E2%9C%82%EF%B8%8F"
+      target="_blank"
+      class="fwa"
+      title="Book on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <!-- MOBILE MENU -->
+    <div class="mob-menu" id="mobMenu">
+      <button class="mob-close" id="mobClose" aria-label="Close menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <a href="#services" onclick="closeMob()">Services</a>
+      <a href="#gallery" onclick="closeMob()">Gallery</a>
+      <a href="#testimonials" onclick="closeMob()">Reviews</a>
+      <a href="#pricing" onclick="closeMob()">Pricing</a>
+      <a href="#contact" onclick="closeMob()">Contact</a>
+      <a
+        href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20AmitHair%20Studio%20%E2%9C%82%EF%B8%8F"
+        target="_blank"
+        class="mob-wa"
+      >
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          />
+        </svg>
+        Book Now
+      </a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="nav-inner">
+        <a href="#" class="logo">Amit<span>Hair</span></a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a
+          href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20AmitHair%20Studio%20%E2%9C%82%EF%B8%8F"
+          target="_blank"
+          class="nav-wa"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            />
+          </svg>
+          Book Now
+        </a>
+        <button
+          type="button"
+          class="hamburger"
+          id="ham"
+          aria-label="Open menu"
+          aria-controls="mobMenu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-img">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=85&auto=format&fit=crop"
+          alt="Professional barber giving a stylish haircut"
+          loading="eager"
+        />
+      </div>
+      <div class="hero-body">
+        <div class="wrap">
+          <div class="hero-eyebrow">
+            <div class="ey-dot"></div>
+            <span class="ey-txt">Premium Hair Studio · Indore</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="ln">Modern Cuts.</span>
+            <span class="ln">Bold <span class="au">Style.</span></span>
+            <span class="ln">Your Look.</span>
+          </h1>
+          <p class="hero-sub">
+            Expert cuts, color & grooming crafted just for you. Book instantly
+            on WhatsApp - no apps, no waiting, just great hair.
+          </p>
+          <div class="hero-btns">
+            <a
+              href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20AmitHair%20Studio%20%E2%9C%82%EF%B8%8F"
+              target="_blank"
+              class="btn-wa"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              Book via WhatsApp
+            </a>
+            <a href="#services" class="btn-ghost">View Services →</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-n">500+</div>
+              <div class="stat-l">Happy Clients</div>
+            </div>
+            <div>
+              <div class="stat-n">8+</div>
+              <div class="stat-l">Years Experience</div>
+            </div>
+            <div>
+              <div class="stat-n">4.9★</div>
+              <div class="stat-l">Google Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="sec">
+      <div class="sec-in">
+        <div class="ctr rv" style="margin-bottom: clamp(36px, 5vw, 60px)">
+          <div class="stag">What We Offer</div>
+          <h2 class="stitle" style="margin-bottom: 12px">
+            Expert Services<br />Tailored for You
+          </h2>
+          <p class="ssub">
+            From precision cuts to bold transformations - crafted with care and
+            passion.
+          </p>
+        </div>
+        <div class="svc-grid">
+          <div class="svc-card rv">
+            <div class="svc-img">
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=80&auto=format&fit=crop"
+                alt="Haircut and styling salon"
+              />
+            </div>
+            <div class="svc-name">Haircut & Styling</div>
+            <p class="svc-desc">
+              Precision cuts tailored to your face shape and lifestyle. Includes
+              wash and blow-dry finish.
+            </p>
+            <div class="svc-price">From ₹300 <span>/ session</span></div>
+          </div>
+          <div class="svc-card rv d1">
+            <div class="svc-img">
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80&auto=format&fit=crop"
+                alt="Hair coloring highlights"
+              />
+            </div>
+            <div class="svc-name">Hair Coloring</div>
+            <p class="svc-desc">
+              Full color, highlights, balayage and ombre - bringing your color
+              vision to life.
+            </p>
+            <div class="svc-price">From ₹800 <span>/ session</span></div>
+          </div>
+          <div class="svc-card rv d2">
+            <div class="svc-img">
+              <img
+                src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=700&q=80&auto=format&fit=crop"
+                alt="Beard grooming barbershop"
+              />
+            </div>
+            <div class="svc-name">Beard Grooming</div>
+            <p class="svc-desc">
+              Shape, trim and detail your beard to perfection. Hot towel and
+              conditioning oil included.
+            </p>
+            <div class="svc-price">From ₹200 <span>/ session</span></div>
+          </div>
+          <div class="svc-card rv">
+            <div class="svc-img">
+              <img
+                src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80&auto=format&fit=crop"
+                alt="Scalp treatment hair care"
+              />
+            </div>
+            <div class="svc-name">Scalp Treatment</div>
+            <p class="svc-desc">
+              Deep conditioning and therapeutic scalp care for stronger,
+              healthier hair growth.
+            </p>
+            <div class="svc-price">From ₹500 <span>/ session</span></div>
+          </div>
+          <div class="svc-card rv d1">
+            <div class="svc-img">
+              <img
+                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=700&q=80&auto=format&fit=crop"
+                alt="Keratin smoothing treatment"
+              />
+            </div>
+            <div class="svc-name">Keratin Smoothing</div>
+            <p class="svc-desc">
+              Long-lasting frizz-free smoothing treatment that restores silk
+              shine for weeks.
+            </p>
+            <div class="svc-price">From ₹1500 <span>/ session</span></div>
+          </div>
+          <div class="svc-card rv d2">
+            <div class="svc-img">
+              <img
+                src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=700&q=80&auto=format&fit=crop"
+                alt="Full hair makeover transformation"
+              />
+            </div>
+            <div class="svc-name">Full Makeover</div>
+            <p class="svc-desc">
+              Complete transformation - cut, color, treatment and styling. Walk
+              in, walk out transformed.
+            </p>
+            <div class="svc-price">From ₹2500 <span>/ session</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="sec">
+      <div class="sec-in">
+        <div class="gal-head">
+          <div class="rv">
+            <div class="stag">Portfolio</div>
+            <h2 class="stitle">Our Work<br />Speaks Itself</h2>
+          </div>
+          <p class="ssub rv d1" style="max-width: 280px">
+            Every look is a collaboration. Follow on Instagram to see the latest
+            work.
+          </p>
+        </div>
+        <div class="gal-grid rv">
+          <div class="g-item">
+            <img
+              src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80&auto=format&fit=crop"
+              alt="Bold hair color transformation"
+            />
+            <div class="g-tag">Featured</div>
+            <div class="g-ov">
+              <div class="g-lbl">Bold Transformation</div>
+              <div class="g-sub">Color & Cut</div>
+            </div>
+          </div>
+          <div class="g-item">
+            <img
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80&auto=format&fit=crop"
+              alt="Classic fade barbershop"
+            />
+            <div class="g-ov">
+              <div class="g-lbl">Classic Fade</div>
+              <div class="g-sub">Precision Cut</div>
+            </div>
+          </div>
+          <div class="g-item">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80&auto=format&fit=crop"
+              alt="Balayage color work"
+            />
+            <div class="g-ov">
+              <div class="g-lbl">Balayage</div>
+              <div class="g-sub">Color Work</div>
+            </div>
+          </div>
+          <div class="g-item">
+            <img
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80&auto=format&fit=crop"
+              alt="Beard detail grooming"
+            />
+            <div class="g-ov">
+              <div class="g-lbl">Beard Detail</div>
+              <div class="g-sub">Grooming</div>
+            </div>
+          </div>
+          <div class="g-item">
+            <img
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80&auto=format&fit=crop"
+              alt="Modern hair styling"
+            />
+            <div class="g-ov">
+              <div class="g-lbl">Modern Style</div>
+              <div class="g-sub">Styling</div>
+            </div>
+          </div>
+        </div>
+        <div class="gal-cta rv">
+          <a
+            href="https://instagram.com/amithair_studio"
+            target="_blank"
+            class="btn-ig"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+            See More on @amithair_studio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="sec">
+      <div class="sec-in">
+        <div class="about-in">
+          <div class="about-img rv">
+            <img
+              src="https://images.unsplash.com/photo-1593702288056-f5ec6c168f82?w=900&q=80&auto=format&fit=crop"
+              alt="Skilled barber at work in modern studio"
+            />
+            <div class="ab-badge">
+              <div class="ab-n">8+</div>
+              <div class="ab-l">Years of Mastery</div>
+            </div>
+          </div>
+          <div class="rv d1">
+            <div class="stag">About Amit</div>
+            <h2 class="stitle" style="margin-bottom: 14px">
+              Crafting Confidence,<br />One Cut at a Time
+            </h2>
+            <p class="ssub">
+              AmitHair Studio isn't just a salon - it's a sanctuary. From the
+              first consultation to the final reveal, every detail is handled
+              with precision and passion for your best look.
+            </p>
+            <div class="about-feats">
+              <div class="af">
+                <div class="af-ic"><i class="bi bi-scissors" aria-hidden="true"></i></div>
+                <div>
+                  <div class="af-title">Expert Stylist, 8+ Years</div>
+                  <div class="af-desc">
+                    Trained in the latest cuts, colors and trends - every client
+                    leaves looking their absolute best.
+                  </div>
+                </div>
+              </div>
+              <div class="af">
+                <div class="af-ic"><i class="bi bi-flower1" aria-hidden="true"></i></div>
+                <div>
+                  <div class="af-title">Premium Skin-Safe Products</div>
+                  <div class="af-desc">
+                    Only salon-grade products that nourish your hair while
+                    delivering stunning results.
+                  </div>
+                </div>
+              </div>
+              <div class="af">
+                <div class="af-ic"><i class="bi bi-whatsapp" aria-hidden="true"></i></div>
+                <div>
+                  <div class="af-title">Instant WhatsApp Booking</div>
+                  <div class="af-desc">
+                    No apps, no forms. Message us and lock in your appointment
+                    in seconds.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="sec">
+      <div class="sec-in">
+        <div class="ctr rv">
+          <div class="stag">Client Love</div>
+          <h2 class="stitle" style="margin-bottom: 12px">
+            What People Are Saying
+          </h2>
+          <p class="ssub">
+            Real words from real clients who trust Amit with their look every
+            time.
+          </p>
+        </div>
+      </div>
+      <div class="testi-wrap">
+        <div class="t-track">
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Amit is genuinely talented. Got a fade and beard trim - walked out
+              looking 10 years younger. Book him, you won't regret it!
+            </p>
+            <div class="t-author">
+              <div class="t-av">RK</div>
+              <div>
+                <div class="t-name">Rahul K.</div>
+                <div class="t-role">Regular Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Messaged on WhatsApp and had an appointment within the hour. The
+              color came out exactly as I imagined. Love it!
+            </p>
+            <div class="t-author">
+              <div class="t-av">PS</div>
+              <div>
+                <div class="t-name">Priya S.</div>
+                <div class="t-role">Hair Coloring Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              The keratin treatment changed my life. No more frizz, no more bad
+              hair days. Highly recommend AmitHair to everyone!
+            </p>
+            <div class="t-author">
+              <div class="t-av">AN</div>
+              <div>
+                <div class="t-name">Ananya N.</div>
+                <div class="t-role">Keratin Treatment</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Finally a stylist who truly listens. The consultation was
+              thorough, the result was stunning. Customer for life!
+            </p>
+            <div class="t-author">
+              <div class="t-av">VM</div>
+              <div>
+                <div class="t-name">Vijay M.</div>
+                <div class="t-role">Loyal Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Best haircut I've had in years. The studio has such a cool modern
+              vibe and Amit is super professional. Five stars!
+            </p>
+            <div class="t-author">
+              <div class="t-av">DT</div>
+              <div>
+                <div class="t-name">Deepa T.</div>
+                <div class="t-role">New Client</div>
+              </div>
+            </div>
+          </div>
+          <!-- duplicate for seamless loop -->
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Amit is genuinely talented. Got a fade and beard trim - walked out
+              looking 10 years younger. Book him, you won't regret it!
+            </p>
+            <div class="t-author">
+              <div class="t-av">RK</div>
+              <div>
+                <div class="t-name">Rahul K.</div>
+                <div class="t-role">Regular Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Messaged on WhatsApp and had an appointment within the hour. The
+              color came out exactly as I imagined. Love it!
+            </p>
+            <div class="t-author">
+              <div class="t-av">PS</div>
+              <div>
+                <div class="t-name">Priya S.</div>
+                <div class="t-role">Hair Coloring Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              The keratin treatment changed my life. No more frizz, no more bad
+              hair days. Highly recommend AmitHair to everyone!
+            </p>
+            <div class="t-author">
+              <div class="t-av">AN</div>
+              <div>
+                <div class="t-name">Ananya N.</div>
+                <div class="t-role">Keratin Treatment</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Finally a stylist who truly listens. The consultation was
+              thorough, the result was stunning. Customer for life!
+            </p>
+            <div class="t-author">
+              <div class="t-av">VM</div>
+              <div>
+                <div class="t-name">Vijay M.</div>
+                <div class="t-role">Loyal Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="t-q">"</div>
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              Best haircut I've had in years. The studio has such a cool modern
+              vibe and Amit is super professional. Five stars!
+            </p>
+            <div class="t-author">
+              <div class="t-av">DT</div>
+              <div>
+                <div class="t-name">Deepa T.</div>
+                <div class="t-role">New Client</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="sec">
+      <div class="sec-in">
+        <div class="ctr rv">
+          <div class="stag">Transparent Pricing</div>
+          <h2 class="stitle" style="margin-bottom: 12px">
+            Simple Packages,<br />Stunning Results
+          </h2>
+          <p class="ssub">
+            No hidden fees. No surprises. Just great hair at honest prices.
+          </p>
+        </div>
+        <div class="p-grid">
+          <div class="p-card rv d1">
+            <div class="p-name">Essential</div>
+            <p class="p-desc">
+              Perfect for a quick refresh or your first visit with us.
+            </p>
+            <div class="p-price"><sup>₹</sup>300</div>
+            <p class="p-period">starting from</p>
+            <ul class="p-features">
+              <li>Haircut & Blow-dry</li>
+              <li>Scalp Massage</li>
+              <li>Style Consultation</li>
+              <li>After-care Advice</li>
+            </ul>
+            <a
+              href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20the%20Essential%20package%20%E2%9C%82%EF%B8%8F"
+              target="_blank"
+              class="p-btn"
+              >Book via WhatsApp</a
+            >
+          </div>
+          <div class="p-card pop rv d2">
+            <div class="p-badge"><i class="bi bi-star-fill" aria-hidden="true"></i> Most Popular</div>
+            <div class="p-name">Signature</div>
+            <p class="p-desc">
+              Our most-loved package for the full AmitHair experience.
+            </p>
+            <div class="p-price"><sup>₹</sup>1200</div>
+            <p class="p-period">starting from</p>
+            <ul class="p-features">
+              <li>Cut + Color or Highlights</li>
+              <li>Deep Conditioning Mask</li>
+              <li>Scalp Treatment</li>
+              <li>Professional Blow-dry</li>
+              <li>Priority Booking Slot</li>
+            </ul>
+            <a
+              href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20the%20Signature%20package%20%E2%9C%82%EF%B8%8F"
+              target="_blank"
+              class="p-btn"
+              >Book via WhatsApp</a
+            >
+          </div>
+          <div class="p-card rv d3">
+            <div class="p-name">Luxury</div>
+            <p class="p-desc">
+              The ultimate head-to-toe transformation for a brand new you.
+            </p>
+            <div class="p-price"><sup>₹</sup>2500</div>
+            <p class="p-period">starting from</p>
+            <ul class="p-features">
+              <li>Full Makeover</li>
+              <li>Keratin Smoothing</li>
+              <li>Balayage or Ombre</li>
+              <li>Beard Grooming (Men)</li>
+              <li>VIP Priority Slot</li>
+            </ul>
+            <a
+              href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20the%20Luxury%20package%20%E2%9C%82%EF%B8%8F"
+              target="_blank"
+              class="p-btn"
+              >Book via WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="cta-img">
+        <img
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1600&q=80&auto=format&fit=crop"
+          alt="Modern hair salon interior atmosphere"
+        />
+      </div>
+      <div class="cta-body">
+        <div class="stag rv" style="justify-content: center">
+          Book Your Appointment
+        </div>
+        <h2 class="cta-title rv">
+          Ready for Your<br /><em>Best Hair Day?</em>
+        </h2>
+        <p class="cta-sub rv">
+          Message Amit directly - replies usually within minutes. Your perfect
+          look is one message away.
+        </p>
+        <div class="cta-btns rv">
+          <a
+            href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20AmitHair%20Studio%20%E2%9C%82%EF%B8%8F"
+            target="_blank"
+            class="btn-wa"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Book on WhatsApp
+          </a>
+          <a
+            href="https://instagram.com/amithair_studio"
+            target="_blank"
+            class="btn-ig"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec">
+      <div class="sec-in">
+        <div class="cont-in">
+          <div class="rv">
+            <div class="stag">Get In Touch</div>
+            <h2 class="cont-h">Come Visit<br />the Studio</h2>
+            <p class="cont-p">
+              Walk-ins always welcome, but booking ahead on WhatsApp guarantees
+              your slot and zero waiting time.
+            </p>
+            <div class="c-items">
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></div>
+                <div>
+                  <div class="c-lbl">WhatsApp / Phone</div>
+                  <div class="c-val">+91 93990 06704</div>
+                </div>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-instagram" aria-hidden="true"></i></div>
+                <div>
+                  <div class="c-lbl">Instagram</div>
+                  <div class="c-val">@amithair_studio</div>
+                </div>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-clock" aria-hidden="true"></i></div>
+                <div>
+                  <div class="c-lbl">Working Hours</div>
+                  <div class="c-val">Mon – Sat: 9 AM – 8 PM</div>
+                </div>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+                <div>
+                  <div class="c-lbl">Location</div>
+                  <div class="c-val">Bhawani Chowk, Anand Nagar, Bhopal</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-socs">
+              <a
+                href="https://wa.me/919399006704?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20%E2%9C%82%EF%B8%8F"
+                target="_blank"
+                class="c-soc wa"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                WhatsApp Us
+              </a>
+              <a
+                href="https://instagram.com/amithair_studio"
+                target="_blank"
+                class="c-soc ig"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  />
+                </svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+          <div class="cont-img rv d2">
+            <img
+              src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?w=900&q=80&auto=format&fit=crop"
+              alt="Barber in professional hair salon"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot-in">
+        <div class="foot-grid">
+          <div class="f-brand">
+            <a href="#" class="logo">Amit<span>Hair</span></a>
+            <p>
+              Modern cuts, bold style, and a studio that feels like home. Book
+              on WhatsApp today.
+            </p>
+            <div class="f-soc">
+              <a href="https://wa.me/919399006704" target="_blank" class="fs"
+                ><i class="bi bi-whatsapp" aria-hidden="true"></i></a
+              >
+              <a
+                href="https://instagram.com/amithair_studio"
+                target="_blank"
+                class="fs"
+                ><i class="bi bi-instagram" aria-hidden="true"></i></a
+              >
+            </div>
+          </div>
+          <div class="f-col">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Haircut & Styling</a></li>
+              <li><a href="#services">Hair Coloring</a></li>
+              <li><a href="#services">Keratin Treatment</a></li>
+              <li><a href="#services">Beard Grooming</a></li>
+              <li><a href="#services">Scalp Treatment</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Book Now</h4>
+            <ul>
+              <li>
+                <a href="https://wa.me/919399006704" target="_blank"
+                  >WhatsApp Booking</a
+                >
+              </li>
+              <li>
+                <a href="https://instagram.com/amithair_studio" target="_blank"
+                  >Instagram DM</a
+                >
+              </li>
+              <li><a href="#pricing">View Packages</a></li>
+              <li><a href="#contact">Studio Location</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bot">
+          <p>© 2026 AmitHair Studio. All rights reserved.</p>
+          <p>Crafted for <a href="#">AmitHair Studio</a> <i class="bi bi-scissors" aria-hidden="true"></i></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // NAV scroll
+      window.addEventListener("scroll", () => {
+        document
+          .getElementById("nav")
+          .classList.toggle("scrolled", window.scrollY > 40);
+      });
+      // Mobile menu
+      const ham = document.getElementById("ham"),
+        mob = document.getElementById("mobMenu"),
+        mc = document.getElementById("mobClose");
+      const setMobState = (open) => {
+        mob.classList.toggle("open", open);
+        document.body.classList.toggle("menu-open", open);
+        ham.setAttribute("aria-expanded", String(open));
+      };
+      ham.addEventListener("click", () => setMobState(true));
+      mc.addEventListener("click", () => setMobState(false));
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && mob.classList.contains("open")) {
+          setMobState(false);
+        }
+      });
+      function closeMob() {
+        setMobState(false);
+      }
+      // Scroll reveal
+      const io = new IntersectionObserver(
+        (es) => {
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("on");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".rv").forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
