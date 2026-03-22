@@ -19,6 +19,12 @@
   --max: 1120px;
   --px: clamp(18px, 5vw, 60px);
 }
+
+::selection {
+  background: var(--gold);
+  color: var(--black);
+}
+
 html {
   scroll-behavior: smooth;
 }
