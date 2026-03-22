@@ -1,6 +1,6 @@
-# AmitHair Studio Landing Page
+# Amit Hair Studio Landing Page
 
-A modern, single-page website for AmitHair Studio with service highlights, gallery, pricing, testimonials, and direct booking via WhatsApp.
+A modern, single-page website for Amit Hair Studio with service highlights, gallery, pricing, testimonials, and direct booking via WhatsApp.
 
 ## Tech Stack
 

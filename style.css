@@ -15,7 +15,7 @@
   --goldA: rgba(201, 168, 76, 0.12);
   --white: #ffffff;
   --muted: #777;
-  --green: #25d366;
+  --green: #157b3a;
   --max: 1120px;
   --px: clamp(18px, 5vw, 60px);
 }
@@ -497,6 +497,8 @@ nav.scrolled .nav-inner {
   overflow: hidden;
   transition: background 0.3s;
   cursor: default;
+  border: 1px solid #c9a84c91;
+  border-radius: 12px;
 }
 .svc-card::after {
   content: "";
@@ -544,7 +546,7 @@ nav.scrolled .nav-inner {
 }
 .svc-price {
   font-family: "Syne", sans-serif;
-  font-size: 21px;
+  font-size: 15px;
   font-weight: 800;
   color: var(--gold);
 }
@@ -787,8 +789,27 @@ nav.scrolled .nav-inner {
   overflow: hidden;
 }
 .testi-wrap {
+  position: relative;
   overflow: hidden;
   margin-top: clamp(32px, 5vw, 48px);
+}
+.testi-wrap::before,
+.testi-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(28px, 6vw, 90px);
+  z-index: 3;
+  pointer-events: none;
+}
+.testi-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--black) 0%, rgba(8, 8, 8, 0) 100%);
+}
+.testi-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--black) 0%, rgba(8, 8, 8, 0) 100%);
 }
 .t-track {
   display: flex;
@@ -808,7 +829,7 @@ nav.scrolled .nav-inner {
   }
 }
 .t-card {
-  min-width: clamp(268px, 34vw, 330px);
+  max-width: clamp(268px, 34vw, 330px);
   background: var(--dark2);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 13px;
