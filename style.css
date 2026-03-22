@@ -79,16 +79,23 @@ nav.scrolled .nav-inner {
   padding-bottom: 13px;
 }
 .logo {
-  font-family: "Syne", sans-serif;
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: -0.3px;
-  color: var(--white);
   text-decoration: none;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
 }
-.logo span {
-  color: var(--gold);
+.logo-img {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.mob-logo {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 8px;
 }
 .nav-links {
   display: flex;
@@ -497,8 +504,6 @@ nav.scrolled .nav-inner {
   overflow: hidden;
   transition: background 0.3s;
   cursor: default;
-  border: 1px solid #c9a84c91;
-  border-radius: 12px;
 }
 .svc-card::after {
   content: "";
@@ -583,6 +588,7 @@ nav.scrolled .nav-inner {
 }
 .g-item img {
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  object-position: top;
 }
 .g-item:hover img {
   transform: scale(1.07);
@@ -1219,8 +1225,7 @@ footer {
   margin-bottom: 48px;
 }
 .f-brand .logo {
-  font-size: 21px;
-  display: block;
+  display: inline-flex;
   margin-bottom: 13px;
 }
 .f-brand p {
